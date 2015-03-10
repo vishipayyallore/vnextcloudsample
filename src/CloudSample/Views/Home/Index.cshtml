@@ -1,0 +1,34 @@
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    <h1>Cloud Patterns</h1>
+    <p class="lead">This application domonstrates the best practices that should be implemented to build the real-world cloud based application.</p>
+</div>
+
+<div class="row">
+    <div class="col-md-4">
+        <h2>Exception Handling</h2>
+        <p>
+            How should we handle exceptions in cloud and deal with transient failures, 
+            how to switch between different storage instances dynamically in exceptional scenarios,
+            for smooth custome experience.
+        </p>
+        <p><a id="aExHandling" class="btn btn-default" href="#">Demo &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Exponential Back Off</h2>
+        <p>How we should change the retry logic in cloud. The best pratice that will reduce to number of transactions and lower the cost.</p>
+        <p><a id="aBackOff" class="btn btn-default" href="#">Demo &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Web Hosting</h2>
+        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
+        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    </div>
+</div>
+
+@section scripts{
+    <script src="@Url.Content("~/lib/Scripts/App/HomeIndex.js")"></script>
+}

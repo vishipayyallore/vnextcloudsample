@@ -1,0 +1,31 @@
+﻿
+@{
+    ViewBag.Title = "Cloud Patterns";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<h2>@ViewBag.Message</h2>
+<br />
+<br />
+
+<table>
+    <tr>
+        <th>Url</th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td><input id="url" type="text" class="urlBox" /></td>
+        <td><input id="loadsite" type="button" value="Load" /></td>
+        <td id="waitCell" style="display:none;">&nbsp;&nbsp;&nbsp;<img src="~/images/wait.gif"></td>
+    </tr>
+</table>
+<br />
+<div id="contentDiv">
+</div>
+
+
+@section scripts{
+    <script src="@Url.Content("~/lib/Scripts/App/CloudConceptsBackOff.js")"></script>
+}

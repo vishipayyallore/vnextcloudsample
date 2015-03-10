@@ -1,0 +1,39 @@
+﻿@{
+    ViewBag.Title = "Cloud Patterns";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<h2>@ViewBag.Message</h2>
+<br/>
+<br />
+
+<table>
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th></th>
+        <th></th>
+    </tr>
+    <tr>
+        <td><input id="firstName" type="text" /></td>
+        <td><input id="lastName" type="text" /></td>
+        <td><input id ="search"type="button" value="Search"/></td>
+        <td id="waitCell" style="display:none;">&nbsp;&nbsp;&nbsp;<img src="~/images/wait.gif"></td>
+    </tr>
+</table>
+<br/>
+<table id="resultTable" class="result">
+    <tr>
+        <th>&nbsp;Firstname&nbsp;</th>
+        <th>&nbsp;Lastname&nbsp;</th>
+        <th>&nbsp;Phone&nbsp;</th>
+        <th>&nbsp;Email&nbsp;</th>
+        <th>&nbsp;Twitter&nbsp;</th>
+    </tr>
+</table>
+
+
+@section scripts{
+    <script src="@Url.Content("~/lib/Scripts/App/CloudConceptsExHandling.js")"></script>
+    }
